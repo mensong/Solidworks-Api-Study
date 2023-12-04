@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21B09086-5504-46E6-92BB-3746B2451BAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolidworksApiProject</RootNamespace>
+    <AssemblyName>SolidworksApiProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SolidWorks.Interop.sldworks, Version=25.2.0.52, Culture=neutral, PublicKeyToken=7c4797c3e4eeac03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\SolidworksLibs\Sw2021\SolidWorks.Interop.sldworks.dll</HintPath>
+    </Reference>
+    <Reference Include="SolidWorks.Interop.swconst, Version=25.2.0.52, Culture=neutral, PublicKeyToken=19f43e188e4269d8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\SolidworksLibs\Sw2021\SolidWorks.Interop.swconst.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chapter10\Chapter10Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter10\Chapter10Form.Designer.cs">
+      <DependentUpon>Chapter10Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter11\Chapter11Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter11\Chapter11Form.Designer.cs">
+      <DependentUpon>Chapter11Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter12\Chapter12Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter12\Chapter12Form.Designer.cs">
+      <DependentUpon>Chapter12Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13\Chapter13Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter13\Chapter13Form.Designer.cs">
+      <DependentUpon>Chapter13Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter14\Chapter14Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter14\Chapter14Form.Designer.cs">
+      <DependentUpon>Chapter14Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter15\Chapter15Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter15\Chapter15Form.Designer.cs">
+      <DependentUpon>Chapter15Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter5\Chapter5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter5\Chapter5Form.Designer.cs">
+      <DependentUpon>Chapter5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter6\Chapter6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter6\Chapter6Form.Designer.cs">
+      <DependentUpon>Chapter6Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter7\Chapter7Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter7\Chapter7Form.Designer.cs">
+      <DependentUpon>Chapter7Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter8\Chapter8Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter8\Chapter8Form.Designer.cs">
+      <DependentUpon>Chapter8Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter9\Chapter9Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter9\Chapter9Form.Designer.cs">
+      <DependentUpon>Chapter9Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicFunction.cs" />
+    <EmbeddedResource Include="Chapter10\Chapter10Form.resx">
+      <DependentUpon>Chapter10Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter11\Chapter11Form.resx">
+      <DependentUpon>Chapter11Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter12\Chapter12Form.resx">
+      <DependentUpon>Chapter12Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter13\Chapter13Form.resx">
+      <DependentUpon>Chapter13Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter14\Chapter14Form.resx">
+      <DependentUpon>Chapter14Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter15\Chapter15Form.resx">
+      <DependentUpon>Chapter15Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter5\Chapter5Form.resx">
+      <DependentUpon>Chapter5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter6\Chapter6Form.resx">
+      <DependentUpon>Chapter6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter7\Chapter7Form.resx">
+      <DependentUpon>Chapter7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter8\Chapter8Form.resx">
+      <DependentUpon>Chapter8Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter9\Chapter9Form.resx">
+      <DependentUpon>Chapter9Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
